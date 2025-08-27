@@ -10,13 +10,12 @@ def register_student(request):
         form = StudentForm(request.POST)
         if form.is_valid():
             student = form.save()
-                        return redirect('student_profile', student_id=student.id)  # redirect to profile
+            return redirect('student_profile', student_id=student.id)  # redirect to profile
     else:
         form = StudentRegistrationForm()
     return render(request, 'students/register.html', {'form': form})
 
-
-            # Send email to student or admin
+ # Send email to student or admin
             send_mail(
                 subject='New Student Registered',
                 message=f"Student {student.first_name} {student.last_name} has registered.",
