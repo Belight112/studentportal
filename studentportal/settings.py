@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%gglp)z986v6)w!)416v2b3s4b2glz%*t=$_42wfjmdr=_4kt@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['studentportal-nhnv.onrender.com', 'localhost', '127.0.0.1']
 
